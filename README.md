@@ -1,0 +1,1 @@
+To use this you copy the content of bookmark.txt and then make a random bookmark, right click on it, click edit, the replace the url with the bookmark you copied, then when you are on PC run it and you are good to go.
