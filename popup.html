@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Fast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="popup-wrapper">
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="bg-orb orb-3"></div>
+
+        <div class="glass-panel">
+            <header class="header">
+                <div class="brand">
+                    <div class="logo-glow">
+                        <span class="logo-emoji">🎮</span>
+                    </div>
+                    <div class="brand-text">
+                        <h1>PC Fast</h1>
+                        <span class="version">v1.1</span>
+                    </div>
+                </div>
+                <div class="status-pill" id="status-pill">
+                    <span class="status-dot"></span>
+                    <span class="status-text" id="status-text">Ready</span>
+                </div>
+            </header>
+
+            <div class="control-card">
+                <div class="control-row">
+                    <div class="control-info">
+                        <span class="control-icon">⚡</span>
+                        <div>
+                            <span class="control-label">Auto-Fill</span>
+                            <span class="control-desc">Runs automatically on load</span>
+                        </div>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" id="auto-toggle" checked>
+                        <span class="toggle-track">
+                            <span class="toggle-thumb"></span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="control-card">
+                <div class="control-row">
+                    <div class="control-info">
+                        <span class="control-icon">💬</span>
+                        <div>
+                            <span class="control-label">Floating Widget</span>
+                            <span class="control-desc">Show overlay on page</span>
+                        </div>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" id="widget-toggle" checked>
+                        <span class="toggle-track">
+                            <span class="toggle-thumb"></span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <button id="complete-btn" class="action-btn">
+                <div class="btn-shine"></div>
+                <span class="btn-text">Manual Unlock</span>
+                <span class="btn-icon">✨</span>
+            </button>
+
+            <button id="capture-btn" class="action-btn">
+                <div class="btn-shine"></div>
+                <span class="btn-text">Capture Page DOM</span>
+                <span class="btn-icon">📸</span>
+            </button>
+
+            <button id="solutions-btn" class="action-btn">
+                <div class="btn-shine"></div>
+                <span class="btn-text">View Solutions</span>
+                <span class="btn-icon">💡</span>
+            </button>
+
+            <button id="download-logs-btn" class="action-btn">
+                <div class="btn-shine"></div>
+                <span class="btn-text">Download Logs</span>
+                <span class="btn-icon">📜</span>
+            </button>
+
+            <button id="scan-btn" class="action-btn">
+                <div class="btn-shine"></div>
+                <span class="btn-text">Scan Activity</span>
+                <span class="btn-icon">🔬</span>
+            </button>
+
+            <div id="solution-container" class="solution-container hidden">
+                <div class="solution-header">
+                    <span>Solutions Found</span>
+                    <button id="close-solutions" class="close-mini">✕</button>
+                </div>
+                <div id="solution-list" class="solution-list"></div>
+            </div>
+
+            <div class="info-panel">
+                <div class="info-row"><span class="step-num">1</span> Enter any answer</div>
+                <div class="info-row"><span class="step-num">2</span> Click <b>Check Answer</b></div>
+                <div class="info-row"><span class="step-num">3</span> Helper fills automatically 🎯</div>
+            </div>
+
+            <footer class="footer">
+                <span>PC Fast</span>
+            </footer>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
